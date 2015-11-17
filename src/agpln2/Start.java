@@ -51,9 +51,9 @@ public class Start {
             }
         }
 
-        AGPLN agpln = new AGPLN();
+        AGPLN2 agpln2 = new AGPLN2();
         try {
-            atualizaMapaFitness("banco.txt", agpln.synchronizedHashMap);
+            atualizaMapaFitness("banco.txt", agpln2.synchronizedHashMap);
         } catch (IOException ex) {
             Logger.getLogger(Start.class.getName()).log(Level.SEVERE, null, ex);
         }
