@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stopfile>
+	<stopword>cheaper</stopword>
+	<stopword>more</stopword>
+	<stopword>lower</stopword>
+	<stopword>less</stopword>
+	<stopword>Earlier</stopword>
+	<stopword>closer</stopword>
+	<stopword>better</stopword>
+	<stopword>More</stopword>
+	<stopword>faster</stopword>
+	<stopword>longer</stopword>
+	<stopword>later</stopword>
+	<stopword>Further</stopword>
+	<stopword>earlier</stopword>
+	<stopword>Better</stopword>
+	<stopword>further</stopword>
+	<stopword>harder</stopword>
+	<stopword>Less</stopword>
+	<stopword>higher</stopword>
+</stopfile>
+

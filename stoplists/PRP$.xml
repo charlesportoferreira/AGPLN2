@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stopfile>
+	<stopword>its</stopword>
+	<stopword>their</stopword>
+	<stopword>Its</stopword>
+	<stopword>Their</stopword>
+	<stopword>your</stopword>
+	<stopword>My</stopword>
+	<stopword>my</stopword>
+	<stopword>our</stopword>
+	<stopword>Our</stopword>
+	<stopword>favour</stopword>
+	<stopword>his</stopword>
+	<stopword>His</stopword>
+	<stopword>her</stopword>
+	<stopword>Zuheir</stopword>
+	<stopword>our</stopword>
+</stopfile>
+

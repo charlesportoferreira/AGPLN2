@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stopfile>
+	<stopword>which</stopword>
+	<stopword>That</stopword>
+	<stopword>withholding</stopword>
+	<stopword>that</stopword>
+	<stopword>wh</stopword>
+	<stopword>AT</stopword>
+	<stopword>what</stopword>
+	<stopword>Whatever</stopword>
+	<stopword>Which</stopword>
+	<stopword>WHEAT</stopword>
+	<stopword>WHIM</stopword>
+	<stopword>whatever</stopword>
+</stopfile>
+

@@ -57,17 +57,17 @@ public class Start {
         } catch (IOException ex) {
             Logger.getLogger(Start.class.getName()).log(Level.SEVERE, null, ex);
         }
-        agpln.criaPopulacaoInicial();
+        agpln2.criaPopulacaoInicial();
         System.out.println("---------------------");
         for (int i = 0; i < numGeracoes; i++) {
             System.out.println("\n-------------   Geracao " + i + "   ---------------------\n");
-            agpln.cruza();
-            agpln.muta();
-            agpln.seleciona(12);
+            agpln2.cruza();
+            agpln2.muta();
+            agpln2.seleciona(12);
         }
 
         StringBuilder sb = new StringBuilder();
-        Iterator it = agpln.synchronizedHashMap.entrySet().iterator();
+        Iterator it = agpln2.synchronizedHashMap.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry pair = (Map.Entry) it.next();
             sb.append(pair.getKey()).append(" = ").append(pair.getValue()).append("\n");
