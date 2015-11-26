@@ -1,31 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stopfile>
-	<stopword>Should</stopword>
-	<stopword>May</stopword>
-	<stopword>Could</stopword>
-	<stopword>Would</stopword>
-	<stopword>SHOULD</stopword>
-	<stopword>can</stopword>
 	<stopword>may</stopword>
-	<stopword>would</stopword>
-	<stopword>should</stopword>
-	<stopword>wo</stopword>
-	<stopword>Might</stopword>
-	<stopword>Will</stopword>
-	<stopword>wil</stopword>
-	<stopword>d</stopword>
-	<stopword>ca</stopword>
-	<stopword>ought</stopword>
-	<stopword>may</stopword>
+	<stopword>footprinting</stopword>
 	<stopword>will</stopword>
+	<stopword>need</stopword>
 	<stopword>could</stopword>
 	<stopword>might</stopword>
-	<stopword>ll</stopword>
-	<stopword>shall</stopword>
+	<stopword>can</stopword>
 	<stopword>Can</stopword>
 	<stopword>would</stopword>
+	<stopword>should</stopword>
 	<stopword>cannot</stopword>
-	<stopword>WILL</stopword>
 	<stopword>must</stopword>
+	<stopword>ca</stopword>
 </stopfile>
 

@@ -5,7 +5,9 @@
  */
 package agpln2;
 
-
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -20,11 +22,11 @@ import java.util.concurrent.Future;
 
 /**
  *
- * @author debora
+ * @author charles
  */
 public class AGPLN2 {
 
-   public Map<String, String> synchronizedHashMap;
+    public Map<String, String> synchronizedHashMap;
     public List<Cromossomo> cromossomos;
     int tipoMutacao = 0;
     int numMutacoes = 1;
@@ -56,7 +58,6 @@ public class AGPLN2 {
 //         for (Gene gene : test.getGenes()) {
 //             gene.setValor(0);
 //         }
-        
         cromossomos.stream().forEach((cromossomo) -> {
             cromossomo.getConfigGenes();
             System.out.println(cromossomo.getGeneCodificado());
@@ -100,7 +101,6 @@ public class AGPLN2 {
         // cromossomos.stream().forEach((cromossomo) -> {
         //   System.out.println(cromossomo.getGeneCodificado());
         //});
-        // System.exit(0);
     }
 
     public void muta() {
@@ -222,6 +222,7 @@ public class AGPLN2 {
                     + "id:" + selecionado.getInId() + " - "
                     + "st:" + selecionado.getGeneDecodificado() + "\n"
             );
+            // preperaPrint(selecionado);
             if (map.containsKey(selecionado.getFitness())) {
                 count = map.get(selecionado.getFitness());
                 count++;
@@ -230,8 +231,6 @@ public class AGPLN2 {
                 map.put(selecionado.getFitness(), 1);
             }
         }
-        
-       
 
 //        selecionados.stream().forEach((selecionado) -> {
 //            
@@ -241,6 +240,7 @@ public class AGPLN2 {
 
         if (populacaoConvergiu(map)) {
             numMutacoes = cromossomos.size() - 1;
+
             System.out.println("-------------- Convergiu !!!!!!!---------------------");
         } else {
             numMutacoes = 1;
@@ -261,7 +261,7 @@ public class AGPLN2 {
             if (count > max) {
                 max = count;
             }
-            if (count >= 80.0) {
+            if (count >= 50.0) {
                 value = (double) pair.getKey();
                 if (value == cromossomos.get(0).getFitness()) {
                     tipoMutacao = 1;
@@ -278,5 +278,14 @@ public class AGPLN2 {
         System.out.println(max + " % convergiu. " + numMutacoes + " mutacao(oes) sera(o) realizada(s). " + " TM: " + tipoMutacao);
         return false;
     }
-    
+
+    public static void printFile(String fileName, String texto) throws IOException {
+
+        try (FileWriter fw = new FileWriter(fileName, true); BufferedWriter bw = new BufferedWriter(fw)) {
+            bw.write(texto);
+            // bw.newLine();
+            bw.close();
+            fw.close();
+        }
+    }
 }

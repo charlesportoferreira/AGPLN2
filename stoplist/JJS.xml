@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stopfile>
-	<stopword>steepest</stopword>
 	<stopword>largest</stopword>
+	<stopword>simplest</stopword>
+	<stopword>Yeast</stopword>
+	<stopword>simplicifolia</stopword>
 	<stopword>fastest</stopword>
+	<stopword>smallest</stopword>
 	<stopword>Most</stopword>
-	<stopword>MOST</stopword>
-	<stopword>northwest</stopword>
 	<stopword>least</stopword>
 	<stopword>best</stopword>
-	<stopword>heaviest</stopword>
-	<stopword>lowest</stopword>
 	<stopword>nearest</stopword>
+	<stopword>lowest</stopword>
+	<stopword>earliest</stopword>
 	<stopword>most</stopword>
-	<stopword>poorest</stopword>
-	<stopword>ST</stopword>
-	<stopword>st</stopword>
-	<stopword>biggest</stopword>
 	<stopword>highest</stopword>
-	<stopword>worst</stopword>
-	<stopword>Latest</stopword>
 	<stopword>strongest</stopword>
-	<stopword>latest</stopword>
+	<stopword>closest</stopword>
 	<stopword>greatest</stopword>
 </stopfile>
 

@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stopfile>
-	<stopword>cheaper</stopword>
+	<stopword>PpaRad</stopword>
 	<stopword>more</stopword>
-	<stopword>lower</stopword>
+	<stopword>However</stopword>
 	<stopword>less</stopword>
+	<stopword>slower</stopword>
 	<stopword>Earlier</stopword>
+	<stopword>bona</stopword>
 	<stopword>closer</stopword>
 	<stopword>better</stopword>
 	<stopword>More</stopword>
 	<stopword>faster</stopword>
-	<stopword>longer</stopword>
-	<stopword>later</stopword>
 	<stopword>Further</stopword>
 	<stopword>earlier</stopword>
-	<stopword>Better</stopword>
 	<stopword>further</stopword>
-	<stopword>harder</stopword>
-	<stopword>Less</stopword>
-	<stopword>higher</stopword>
 </stopfile>
 

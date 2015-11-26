@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stopfile>
 	<stopword>what</stopword>
-	<stopword>that</stopword>
-	<stopword>what</stopword>
-	<stopword>whom</stopword>
-	<stopword>What</stopword>
+	<stopword>ho</stopword>
 	<stopword>who</stopword>
-	<stopword>Who</stopword>
 </stopfile>
 

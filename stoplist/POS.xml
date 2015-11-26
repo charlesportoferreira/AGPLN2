@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stopfile>
-	<stopword>wholesales</stopword>
+	<stopword>bypasses</stopword>
+	<stopword>mobility</stopword>
+	<stopword>isocytochromechas</stopword>
 	<stopword>s</stopword>
-	<stopword>S</stopword>
+	<stopword>ligand</stopword>
 </stopfile>
 

@@ -1,62 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stopfile>
-	<stopword>cheaper</stopword>
-	<stopword>smaller</stopword>
-	<stopword>Lower</stopword>
-	<stopword>fewer</stopword>
-	<stopword>Larger</stopword>
-	<stopword>slower</stopword>
-	<stopword>happier</stopword>
-	<stopword>faster</stopword>
-	<stopword>lessen</stopword>
-	<stopword>later</stopword>
-	<stopword>earlier</stopword>
-	<stopword>tighter</stopword>
-	<stopword>greater</stopword>
-	<stopword>lower</stopword>
-	<stopword>cleaner</stopword>
-	<stopword>less</stopword>
-	<stopword>clearer</stopword>
-	<stopword>worse</stopword>
-	<stopword>Earlier</stopword>
-	<stopword>Worse</stopword>
-	<stopword>longer</stopword>
-	<stopword>lower</stopword>
-	<stopword>Higher</stopword>
-	<stopword>shr</stopword>
-	<stopword>higher</stopword>
 	<stopword>larger</stopword>
 	<stopword>wider</stopword>
-	<stopword>fairer</stopword>
+	<stopword>smaller</stopword>
+	<stopword>fewer</stopword>
 	<stopword>narrower</stopword>
-	<stopword>elder</stopword>
-	<stopword>heavier</stopword>
-	<stopword>fuller</stopword>
-	<stopword>simpler</stopword>
-	<stopword>stricter</stopword>
-	<stopword>choosier</stopword>
+	<stopword>Longer</stopword>
+	<stopword>oligomer</stopword>
+	<stopword>Larger</stopword>
+	<stopword>slower</stopword>
 	<stopword>More</stopword>
-	<stopword>harsher</stopword>
-	<stopword>freer</stopword>
+	<stopword>faster</stopword>
+	<stopword>Lesser</stopword>
+	<stopword>Moreover</stopword>
+	<stopword>earlier</stopword>
+	<stopword>lesser</stopword>
 	<stopword>stronger</stopword>
+	<stopword>ala</stopword>
+	<stopword>alanine</stopword>
 	<stopword>broader</stopword>
-	<stopword>harder</stopword>
-	<stopword>softer</stopword>
-	<stopword>Monier</stopword>
-	<stopword>firmer</stopword>
+	<stopword>greater</stopword>
+	<stopword>alaser</stopword>
+	<stopword>shorter</stopword>
+	<stopword>poorer</stopword>
 	<stopword>more</stopword>
-	<stopword>sharper</stopword>
-	<stopword>bigger</stopword>
+	<stopword>lower</stopword>
 	<stopword>weaker</stopword>
-	<stopword>lighter</stopword>
-	<stopword>Frontier</stopword>
+	<stopword>less</stopword>
+	<stopword>Earlier</stopword>
 	<stopword>closer</stopword>
 	<stopword>better</stopword>
-	<stopword>MORE</stopword>
-	<stopword>tougher</stopword>
-	<stopword>richer</stopword>
-	<stopword>easier</stopword>
-	<stopword>further</stopword>
-	<stopword>Older</stopword>
+	<stopword>longer</stopword>
+	<stopword>Close</stopword>
+	<stopword>higher</stopword>
 </stopfile>
 

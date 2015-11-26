@@ -1,27 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stopfile>
+	<stopword>lactis</stopword>
 	<stopword>de</stopword>
-	<stopword>De</stopword>
-	<stopword>D</stopword>
-	<stopword>Bi</stopword>
-	<stopword>facto</stopword>
-	<stopword>rata</stopword>
-	<stopword>del</stopword>
-	<stopword>forma</stopword>
-	<stopword>PRO</stopword>
+	<stopword>novo</stopword>
+	<stopword>crassa</stopword>
+	<stopword>pAG</stopword>
+	<stopword>eta</stopword>
+	<stopword>pAG</stopword>
+	<stopword>Cui</stopword>
+	<stopword>pma</stopword>
+	<stopword>Pi</stopword>
+	<stopword>vivo</stopword>
+	<stopword>motif</stopword>
+	<stopword>PHO</stopword>
+	<stopword>NQO</stopword>
+	<stopword>AcH</stopword>
+	<stopword>STD</stopword>
 	<stopword>pro</stopword>
-	<stopword>mln</stopword>
-	<stopword>versus</stopword>
 	<stopword>et</stopword>
-	<stopword>Travaux</stopword>
-	<stopword>div</stopword>
-	<stopword>los</stopword>
-	<stopword>Deminex</stopword>
-	<stopword>des</stopword>
+	<stopword>adenosine</stopword>
+	<stopword>lysine</stopword>
+	<stopword>mata</stopword>
+	<stopword>NaK</stopword>
+	<stopword>amino</stopword>
+	<stopword>etc</stopword>
+	<stopword>yKu</stopword>
+	<stopword>HB</stopword>
+	<stopword>tyrosine</stopword>
+	<stopword>M</stopword>
+	<stopword>nexin</stopword>
+	<stopword>pAG</stopword>
+	<stopword>trimethyllysine</stopword>
+	<stopword>pAG</stopword>
+	<stopword>pAG</stopword>
+	<stopword>AsnAla</stopword>
+	<stopword>S</stopword>
+	<stopword>tuna</stopword>
+	<stopword>RP</stopword>
+	<stopword>PRT</stopword>
+	<stopword>rev</stopword>
+	<stopword>AcH</stopword>
+	<stopword>Phytohemagglutinin</stopword>
+	<stopword>mono</stopword>
 	<stopword>Y</stopword>
-	<stopword>shr</stopword>
-	<stopword>quasi</stopword>
-	<stopword>per</stopword>
-	<stopword>sake</stopword>
+	<stopword>nourseothricin</stopword>
+	<stopword>Pro</stopword>
+	<stopword>situ</stopword>
+	<stopword>GAL</stopword>
+	<stopword>basepair</stopword>
+	<stopword>i</stopword>
+	<stopword>pYBDTPRO</stopword>
+	<stopword>Departamento</stopword>
+	<stopword>Gln</stopword>
+	<stopword>NaK</stopword>
+	<stopword>Kohno</stopword>
+	<stopword>e</stopword>
 </stopfile>
 

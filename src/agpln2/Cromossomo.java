@@ -20,6 +20,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import reducaostopwords.ReducaoStopWords1;
 import weka.classifiers.Evaluation;
+import weka.classifiers.functions.SMO;
+import weka.classifiers.lazy.IBk;
 import weka.classifiers.misc.HyperPipes;
 import weka.core.Instances;
 
@@ -41,7 +43,6 @@ public class Cromossomo implements Callable<String> {
     private int numAtributos;
     public Map<String, String> syncHashMap;
 
-
     public void resetFitness() {
         this.fitness = 0;
     }
@@ -59,7 +60,7 @@ public class Cromossomo implements Callable<String> {
         id++;
         genes = new ArrayList<>(nrBits);
         criaGenes();
-       
+
     }
 
     public String getConfigGenes() {
@@ -186,9 +187,9 @@ public class Cromossomo implements Callable<String> {
 
     private void classifica() {
         // System.out.println("Executando a classificao do :" + inId);
-        //SMO classifier = new SMO();
-
-        HyperPipes classifier = new HyperPipes();
+        SMO classifier = new SMO();
+      //  IBk classifier = new IBk(5);
+       //  HyperPipes classifier = new HyperPipes();
         BufferedReader datafile = readDataFile(inId + ".arff");
 
         Instances data;

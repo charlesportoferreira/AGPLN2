@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stopfile>
-	<stopword>All</stopword>
 	<stopword>all</stopword>
+	<stopword>All</stopword>
 	<stopword>Such</stopword>
-	<stopword>such</stopword>
-	<stopword>half</stopword>
-	<stopword>Quite</stopword>
+	<stopword>Both</stopword>
+	<stopword>both</stopword>
 </stopfile>
 

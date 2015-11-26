@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stopfile>
 	<stopword>which</stopword>
-	<stopword>withholding</stopword>
-	<stopword>That</stopword>
 	<stopword>that</stopword>
-	<stopword>wh</stopword>
+	<stopword>MAT</stopword>
 	<stopword>AT</stopword>
 	<stopword>what</stopword>
-	<stopword>Whatever</stopword>
-	<stopword>Which</stopword>
-	<stopword>WHEAT</stopword>
-	<stopword>WHIM</stopword>
-	<stopword>whatever</stopword>
+	<stopword>PHO</stopword>
+	<stopword>Heterologous</stopword>
+	<stopword>isoCAT</stopword>
 </stopfile>
 

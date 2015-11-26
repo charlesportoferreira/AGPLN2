@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stopfile>
 	<stopword>over</stopword>
-	<stopword>away</stopword>
 	<stopword>in</stopword>
-	<stopword>forward</stopword>
-	<stopword>about</stopword>
-	<stopword>back</stopword>
+	<stopword>downstream</stopword>
+	<stopword>c</stopword>
 	<stopword>down</stopword>
-	<stopword>around</stopword>
+	<stopword>lpp</stopword>
 	<stopword>off</stopword>
 	<stopword>out</stopword>
-	<stopword>along</stopword>
+	<stopword>lambda</stopword>
 	<stopword>up</stopword>
-	<stopword>UP</stopword>
+	<stopword>ssn</stopword>
 	<stopword>on</stopword>
-	<stopword>ON</stopword>
 </stopfile>
 

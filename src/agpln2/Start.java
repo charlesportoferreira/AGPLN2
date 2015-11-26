@@ -13,6 +13,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -57,6 +58,8 @@ public class Start {
         } catch (IOException ex) {
             Logger.getLogger(Start.class.getName()).log(Level.SEVERE, null, ex);
         }
+
+        String fileName = new Date().toString();
         agpln2.criaPopulacaoInicial();
         System.out.println("---------------------");
         for (int i = 0; i < numGeracoes; i++) {
@@ -64,6 +67,7 @@ public class Start {
             agpln2.cruza();
             agpln2.muta();
             agpln2.seleciona(12);
+            preperaPrint(agpln2.cromossomos, i, fileName);
         }
 
         StringBuilder sb = new StringBuilder();
@@ -166,6 +170,44 @@ public class Start {
     private static boolean existeArquivo(String fileName) {
         File f = new File(fileName);
         return f.exists();
+    }
+
+    public static void preperaPrint(List<Cromossomo> selecionados, int geracao, String fileName) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("\n\n Geracao: ").append(geracao).append("\n");
+        for (Cromossomo selecionado : selecionados) {
+            sb.append("F:").append(selecionado.getFitness())
+                    .append(" - " + "MI:")
+                    .append(selecionado.getMicroAverage())
+                    .append(" - " + "MA:")
+                    .append(selecionado.getMacroAverage())
+                    .append(" - " + "AC:")
+                    .append(selecionado.getPctAcerto())
+                    .append(" - " + "atr:")
+                    .append(selecionado.getNumAtributos())
+                    .append(" - " + "id:")
+                    .append(selecionado.getInId())
+                    .append(" - " + "st:")
+                    .append(selecionado.getGeneDecodificado())
+                    .append("\n");
+        }
+
+        try {
+            updateFile(fileName, sb.toString());
+        } catch (IOException ex) {
+            Logger.getLogger(Start.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
+
+    public static void updateFile(String fileName, String texto) throws IOException {
+
+        try (FileWriter fw = new FileWriter(fileName, true); BufferedWriter bw = new BufferedWriter(fw)) {
+            bw.write(texto);
+            // bw.newLine();
+            bw.close();
+            fw.close();
+        }
     }
 
 }
