@@ -25,11 +25,22 @@ public class Mutacao {
         } else {
             clone.getGenes().get(posicao).setValor(1);
         }
-       
-        
-        
+
         return clone;
         //c.getConfigGenes();
+    }
+
+    public static void mutaGene(Cromossomo cromossomo, int posGene) {
+        if (posGene >= cromossomo.getGenes().size() || posGene < 0) {
+            throw new RuntimeException("Posicao para mutacao fora do range de genes");
+        }
+
+        if (cromossomo.getGenes().get(posGene).getValor() == 1) {
+            cromossomo.getGenes().get(posGene).setValor(0);
+        } else {
+            cromossomo.getGenes().get(posGene).setValor(1);
+        }
+
     }
 
 }

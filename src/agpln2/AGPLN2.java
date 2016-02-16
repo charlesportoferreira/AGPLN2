@@ -9,6 +9,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -38,7 +39,7 @@ public class AGPLN2 {
 
     public void criaPopulacaoInicial() {
         //synchronizedHashMap.put("DT", 100.0);
-        int tamanhoPop = 50;
+        int tamanhoPop = 5;
         for (int i = 0; i < tamanhoPop; i++) {
             cromossomos.add(new Cromossomo(36));
         }
@@ -66,76 +67,115 @@ public class AGPLN2 {
         //System.exit(0);
     }
 
+//    public void cruza() {
+//        if (tipoMutacao == 1) {
+//            System.out.println("Sem cruzamento");
+//            return;
+//        }
+//        System.out.println("Antes do cruzamento " + cromossomos.size());
+//
+//        Random random = new Random();
+//        int max = cromossomos.get(0).getGenes().size() - 1;
+//        int min = 0;
+//        int posInicio;
+//        int posFim;
+//        int cromo1;
+//        int cromo2;
+//        int maxCromo = cromossomos.size() - 1;
+//
+//        List<Cromossomo> filhos = new ArrayList<>();
+//        for (int i = 0; i < cromossomos.size(); i = i + 2) {
+//            if (i + 1 >= cromossomos.size()) {
+//                continue;
+//            }
+//            posInicio = random.nextInt(max - min + 1) + min;
+//            posFim = random.nextInt((max - posInicio) + 1) + posInicio;
+//            cromo1 = random.nextInt(maxCromo - 0 + 1) + 0;
+//            cromo2 = random.nextInt(maxCromo - 0 + 1) + 0;
+//            // System.out.println("!!!!posI: " + posInicio + " posF: " + posFim + " c1: " + cromo1 + " c2: " + cromo2);
+//            Cromossomo[] fs = Cruzamento.cruzaPMX(cromossomos.get(cromo1), cromossomos.get(cromo2), posInicio, posFim);
+//            filhos.add(fs[0]);
+//            filhos.add(fs[1]);
+//        }
+//        cromossomos.addAll(filhos);
+//        System.out.println("Apos o cruzamento " + cromossomos.size());
+//        // cromossomos.stream().forEach((cromossomo) -> {
+//        //   System.out.println(cromossomo.getGeneCodificado());
+//        //});
+//    }
     public void cruza() {
-        if (tipoMutacao == 1) {
-            System.out.println("Sem cruzamento");
-            return;
-        }
-        System.out.println("Antes do cruzamento " + cromossomos.size());
 
         Random random = new Random();
         int max = cromossomos.get(0).getGenes().size() - 1;
         int min = 0;
-        int posInicio;
-        int posFim;
-        int cromo1;
-        int cromo2;
-        int maxCromo = cromossomos.size() - 1;
+        int posInicio, posFim, probCruzamento;
 
-        List<Cromossomo> filhos = new ArrayList<>();
-        for (int i = 0; i < cromossomos.size(); i = i + 2) {
-            if (i + 1 >= cromossomos.size()) {
+        List<Cromossomo> cromossomosCruzamento = new ArrayList<>();
+        for (Cromossomo cromossomo : cromossomos) {
+            probCruzamento = random.nextInt(100 - 0 + 1) + 0;
+            if (probCruzamento < 80) {
+                cromossomosCruzamento.add(cromossomo);
+            }
+        }
+
+        Collections.shuffle(cromossomosCruzamento);
+
+        for (int i = 0; i < cromossomosCruzamento.size(); i = i + 2) {
+            if (i + 1 >= cromossomosCruzamento.size()) {
                 continue;
             }
             posInicio = random.nextInt(max - min + 1) + min;
             posFim = random.nextInt((max - posInicio) + 1) + posInicio;
-            cromo1 = random.nextInt(maxCromo - 0 + 1) + 0;
-            cromo2 = random.nextInt(maxCromo - 0 + 1) + 0;
-            // System.out.println("!!!!posI: " + posInicio + " posF: " + posFim + " c1: " + cromo1 + " c2: " + cromo2);
-            Cromossomo[] fs = Cruzamento.cruzaPMX(cromossomos.get(cromo1), cromossomos.get(cromo2), posInicio, posFim);
-            filhos.add(fs[0]);
-            filhos.add(fs[1]);
+            Cromossomo[] filhos = Cruzamento.cruzaPMX(cromossomosCruzamento.get(i), cromossomosCruzamento.get(i + 1), posInicio, posFim);
+            cromossomos.addAll(Arrays.asList(filhos));
         }
-        cromossomos.addAll(filhos);
-        System.out.println("Apos o cruzamento " + cromossomos.size());
-        // cromossomos.stream().forEach((cromossomo) -> {
-        //   System.out.println(cromossomo.getGeneCodificado());
-        //});
     }
 
+//    public void muta() {
+//        System.out.println("Antes da mutacao " + cromossomos.size());
+//        Random random = new Random();
+//        if (tipoMutacao == 0) {
+//            for (int i = 0; i < numMutacoes; i++) {
+//                int maxCromo = cromossomos.size() - 1;
+//                int minCromo = 1;
+//                int maxMuta = cromossomos.get(0).getGenes().size() - 1;
+//                int minMuta = 0;
+//                int posCromo = random.nextInt(maxCromo - minCromo + 1) + minCromo;
+//                int posMutacao = random.nextInt(maxMuta - minMuta + 1) + minMuta;
+////        System.out.println("posCromo: " + posCromo + " posMuta: " + posMutacao);
+//
+//                cromossomos.add(Mutacao.muta(cromossomos.get(posCromo), posMutacao));
+//            }
+//        } else {
+//            int max = cromossomos.size();
+//            for (int i = 1; i < max; i++) {
+//                int maxMuta = cromossomos.get(0).getGenes().size() - 1;
+//                int minMuta = 0;
+//                int posMutacao = random.nextInt(maxMuta - minMuta + 1) + minMuta;
+//
+//                cromossomos.add(Mutacao.muta(cromossomos.get(i), posMutacao));
+//            }
+//            // cruza();
+//        }
+//        System.out.println("Apos a mutacao " + cromossomos.size());
+//    }
     public void muta() {
-        System.out.println("Antes da mutacao " + cromossomos.size());
         Random random = new Random();
-        if (tipoMutacao == 0) {
-            for (int i = 0; i < numMutacoes; i++) {
-                int maxCromo = cromossomos.size() - 1;
-                int minCromo = 1;
-                int maxMuta = cromossomos.get(0).getGenes().size() - 1;
-                int minMuta = 0;
-                int posCromo = random.nextInt(maxCromo - minCromo + 1) + minCromo;
-                int posMutacao = random.nextInt(maxMuta - minMuta + 1) + minMuta;
-//        System.out.println("posCromo: " + posCromo + " posMuta: " + posMutacao);
-
-                cromossomos.add(Mutacao.muta(cromossomos.get(posCromo), posMutacao));
+        int probMutacao;
+        for (Cromossomo cromossomo : cromossomos) {
+            for (int i = 0; i < cromossomo.getGenes().size(); i++) {
+                probMutacao = random.nextInt(100 - 0 + 1) + 0;
+                if (probMutacao < 25) {
+                    Mutacao.mutaGene(cromossomo, i);
+                }
             }
-        } else {
-            int max = cromossomos.size();
-            for (int i = 1; i < max; i++) {
-                int maxMuta = cromossomos.get(0).getGenes().size() - 1;
-                int minMuta = 0;
-                int posMutacao = random.nextInt(maxMuta - minMuta + 1) + minMuta;
-
-                cromossomos.add(Mutacao.muta(cromossomos.get(i), posMutacao));
-            }
-            // cruza();
         }
-        System.out.println("Apos a mutacao " + cromossomos.size());
     }
 
     public void seleciona(int tamanhoPopulacao) {
         System.out.println("calculando fitness");
         List<Future> futures = new ArrayList<>();
-       //ExecutorService pool = Executors.newFixedThreadPool(4);
+        //ExecutorService pool = Executors.newFixedThreadPool(4);
 
         //  para rodar o calculo do fitnes em modo serial
         // for (Cromossomo cromossomo : cromossomos) {

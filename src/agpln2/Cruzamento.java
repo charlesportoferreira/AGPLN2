@@ -52,5 +52,7 @@ public class Cruzamento {
 
         return cr;
     }
+    
+   
 
 }
