@@ -1,0 +1,150 @@
+
+
+ Geracao: 0
+F:76.66 - MI:0.82 - MA:0.78 - AC:76.66 - atr:7743 - id:52 - st:FW,JJS,RB,VBN
+F:75.94 - MI:0.81 - MA:0.77 - AC:75.94 - atr:8738 - id:54 - st:JJS
+F:75.31 - MI:0.81 - MA:0.76 - AC:75.31 - atr:7430 - id:13 - st:DT,IN,NNP,NNPS,RB,VBN,VBP
+F:65.44 - MI:0.73 - MA:0.66 - AC:65.44 - atr:5046 - id:30 - st:FW,JJ,NNS,NNPS,VBG,VBN
+F:55.75 - MI:0.63 - MA:0.53 - AC:55.75 - atr:3087 - id:8 - st:FW,IN,JJ,JJS,NN,NNS,VBD,VBP,VBZ
+F:66.07 - MI:0.73 - MA:0.66 - AC:66.07 - atr:4932 - id:9 - st:FW,IN,JJ,JJR,JJS,NNS,NNPS,VB,VBN
+F:60.14 - MI:0.67 - MA:0.59 - AC:60.14 - atr:3931 - id:23 - st:IN,JJ,JJR,NN,NNPS,RB,VBN
+F:61.94 - MI:0.68 - MA:0.61 - AC:61.94 - atr:4942 - id:21 - st:DT,FW,IN,JJR,NN,NNP,VBD,VBN,VBZ
+F:52.6 - MI:0.6 - MA:0.51 - AC:52.6 - atr:3381 - id:19 - st:DT,JJ,JJS,NN,NNS,NNP,VB
+F:68.13 - MI:0.75 - MA:0.68 - AC:68.13 - atr:6074 - id:38 - st:DT,FW,JJ,NNP,NNPS,RB,VBP,VBZ
+F:61.22 - MI:0.68 - MA:0.6 - AC:61.22 - atr:3426 - id:6 - st:IN,JJS,NN,NNS,NNPS,VB,VBD,VBG,VBN,VBP,VBZ
+F:65.44 - MI:0.73 - MA:0.65 - AC:65.44 - atr:4856 - id:53 - st:DT,JJ,JJR,NNS,NNPS,VBD,VBG,VBP,VBZ
+
+
+ Geracao: 1
+F:76.66 - MI:0.82 - MA:0.78 - AC:76.66 - atr:7680 - id:96 - st:IN,JJR,JJS,NNPS,RB,VBN
+F:76.66 - MI:0.82 - MA:0.78 - AC:76.66 - atr:8092 - id:54 - st:JJS,VBN
+F:76.66 - MI:0.82 - MA:0.78 - AC:76.66 - atr:7743 - id:52 - st:FW,JJS,RB,VBN
+F:62.48 - MI:0.69 - MA:0.61 - AC:62.48 - atr:5031 - id:94 - st:DT,IN,JJR,NN,NNP,VB,VBD,VBG
+F:65.08 - MI:0.72 - MA:0.65 - AC:65.08 - atr:4843 - id:90 - st:DT,JJ,JJR,JJS,NNS,NNPS,VB,VBG,VBP,VBZ
+F:52.6 - MI:0.6 - MA:0.51 - AC:52.6 - atr:3381 - id:19 - st:DT,JJ,JJS,NN,NNS,NNP,VB
+F:59.96 - MI:0.67 - MA:0.58 - AC:59.96 - atr:3926 - id:95 - st:IN,JJS,NN,NNS,NNPS,VBD,VBN,VBP,VBZ
+F:61.94 - MI:0.69 - MA:0.61 - AC:61.94 - atr:3627 - id:23 - st:IN,JJ,JJR,JJS,NN,NNPS,RB,VBG,VBN
+F:68.58 - MI:0.75 - MA:0.69 - AC:68.58 - atr:6260 - id:93 - st:FW,JJ,NNPS,VB,VBD
+F:73.25 - MI:0.79 - MA:0.74 - AC:73.25 - atr:7027 - id:13 - st:DT,NNP,NNPS,RB,VBD,VBN,VBP,VBZ
+F:59.52 - MI:0.67 - MA:0.58 - AC:59.52 - atr:3946 - id:38 - st:DT,FW,JJ,NN,NNP,NNPS,RB,VBP,VBZ
+F:54.94 - MI:0.63 - MA:0.55 - AC:54.94 - atr:2622 - id:92 - st:DT,JJ,JJS,NN,NNS,VB,VBG,VBN
+
+
+ Geracao: 2
+F:76.75 - MI:0.82 - MA:0.78 - AC:76.75 - atr:7694 - id:52 - st:FW,IN,JJS,RB,VBN
+F:76.66 - MI:0.82 - MA:0.78 - AC:76.66 - atr:8092 - id:54 - st:JJS,VBN
+F:76.66 - MI:0.82 - MA:0.78 - AC:76.66 - atr:7680 - id:96 - st:IN,JJR,JJS,NNPS,RB,VBN
+F:65.35 - MI:0.73 - MA:0.65 - AC:65.35 - atr:5428 - id:19 - st:DT,IN,JJ,JJS,NNS,NNP,VB
+F:61.04 - MI:0.68 - MA:0.59 - AC:61.04 - atr:3671 - id:103 - st:DT,JJ,NN,NNP,NNPS,RB,VB,VBN
+F:64.99 - MI:0.72 - MA:0.65 - AC:64.99 - atr:4819 - id:90 - st:JJ,JJR,JJS,NNS,NNP,NNPS,VB,VBG,VBP,VBZ
+F:61.94 - MI:0.69 - MA:0.61 - AC:61.94 - atr:3627 - id:107 - st:IN,JJ,JJR,JJS,NN,NNPS,RB,VBG,VBN
+F:70.2 - MI:0.77 - MA:0.71 - AC:70.2 - atr:5721 - id:23 - st:IN,JJ,JJR,JJS,NNP,NNPS,RB,VBG,VBN
+F:59.69 - MI:0.66 - MA:0.58 - AC:59.69 - atr:4303 - id:95 - st:IN,JJS,NN,NNS,NNPS,VBD,VBP,VBZ
+F:62.48 - MI:0.69 - MA:0.61 - AC:62.48 - atr:5031 - id:94 - st:DT,IN,JJR,NN,NNP,VB,VBD,VBG
+F:74.24 - MI:0.8 - MA:0.75 - AC:74.24 - atr:8370 - id:105 - st:FW,JJS,NNPS,VBZ
+F:59.52 - MI:0.66 - MA:0.58 - AC:59.52 - atr:4019 - id:100 - st:DT,IN,JJR,NN,NNS,NNPS,VB,VBD,VBG
+
+
+ Geracao: 3
+F:76.75 - MI:0.82 - MA:0.78 - AC:76.75 - atr:7694 - id:52 - st:FW,IN,JJS,RB,VBN
+F:76.66 - MI:0.82 - MA:0.78 - AC:76.66 - atr:7680 - id:112 - st:IN,JJR,JJS,NNPS,RB,VBN
+F:76.66 - MI:0.82 - MA:0.78 - AC:76.66 - atr:7680 - id:96 - st:IN,JJR,JJS,NNPS,RB,VBN
+F:75.94 - MI:0.81 - MA:0.77 - AC:75.94 - atr:7502 - id:115 - st:JJS,NNPS,RB,VBN,VBP
+F:74.24 - MI:0.8 - MA:0.75 - AC:74.24 - atr:8370 - id:105 - st:FW,JJS,NNPS,VBZ
+F:59.43 - MI:0.66 - MA:0.58 - AC:59.43 - atr:4119 - id:111 - st:IN,JJ,JJR,JJS,NN,NNPS,RB,VB
+F:76.21 - MI:0.82 - MA:0.77 - AC:76.21 - atr:8084 - id:54 - st:FW,VBN
+F:52.96 - MI:0.6 - MA:0.51 - AC:52.96 - atr:3421 - id:117 - st:DT,FW,JJ,JJR,NN,NNS,NNPS,VBD
+F:72.26 - MI:0.78 - MA:0.73 - AC:72.26 - atr:8197 - id:108 - st:NNP,VB
+F:62.57 - MI:0.69 - MA:0.62 - AC:62.57 - atr:3475 - id:107 - st:IN,JJ,JJR,JJS,NN,NNPS,RB,VBG,VBN,VBP
+F:69.66 - MI:0.76 - MA:0.69 - AC:69.66 - atr:6412 - id:90 - st:JJR,JJS,NNS,NNP,NNPS,VB,VBG,VBP,VBZ
+F:75.58 - MI:0.81 - MA:0.77 - AC:75.58 - atr:7239 - id:23 - st:IN,JJR,JJS,NNP,NNPS,RB,VBG,VBN
+
+
+ Geracao: 4
+F:76.75 - MI:0.82 - MA:0.78 - AC:76.75 - atr:7694 - id:52 - st:FW,IN,JJS,RB,VBN
+F:76.66 - MI:0.82 - MA:0.77 - AC:76.66 - atr:7359 - id:118 - st:IN,JJR,JJS,RB,VBN,VBZ
+F:76.12 - MI:0.81 - MA:0.77 - AC:76.12 - atr:7435 - id:96 - st:IN,JJR,JJS,NNPS,RB,VBN,VBP
+F:73.16 - MI:0.79 - MA:0.74 - AC:73.16 - atr:7964 - id:54 - st:VBD,VBN
+F:75.58 - MI:0.81 - MA:0.77 - AC:75.58 - atr:7239 - id:23 - st:IN,JJR,JJS,NNP,NNPS,RB,VBG,VBN
+F:72.35 - MI:0.78 - MA:0.72 - AC:72.35 - atr:6747 - id:119 - st:FW,IN,JJR,JJS,NNPS,RB,VB,VBD,VBN,VBZ
+F:65.8 - MI:0.73 - MA:0.66 - AC:65.8 - atr:5587 - id:120 - st:DT,FW,JJ,JJR,NNS,NNPS,RB
+F:72.89 - MI:0.79 - MA:0.74 - AC:72.89 - atr:7885 - id:121 - st:FW,IN,JJS,VBD,VBN
+F:54.04 - MI:0.61 - MA:0.52 - AC:54.04 - atr:3481 - id:117 - st:DT,FW,JJ,JJR,NN,NNS,NNPS,VBZ
+F:75.67 - MI:0.81 - MA:0.77 - AC:75.67 - atr:7484 - id:115 - st:FW,JJS,NNPS,RB,VBN,VBP
+F:72.44 - MI:0.78 - MA:0.73 - AC:72.44 - atr:8220 - id:108 - st:JJR,VB
+F:59.16 - MI:0.66 - MA:0.58 - AC:59.16 - atr:4400 - id:111 - st:JJ,JJR,JJS,NN,NNPS,VB
+
+
+ Geracao: 5
+F:76.75 - MI:0.82 - MA:0.78 - AC:76.75 - atr:7694 - id:52 - st:FW,IN,JJS,RB,VBN
+F:75.67 - MI:0.81 - MA:0.77 - AC:75.67 - atr:8080 - id:123 - st:DT,RB,VBZ
+F:75.31 - MI:0.81 - MA:0.76 - AC:75.31 - atr:7703 - id:128 - st:FW,JJR,JJS,NNPS,VBN,VBZ
+F:71.63 - MI:0.78 - MA:0.72 - AC:71.63 - atr:7473 - id:124 - st:FW,IN,JJR,NNPS,RB,VB,VBD
+F:74.06 - MI:0.8 - MA:0.75 - AC:74.06 - atr:7362 - id:115 - st:DT,FW,JJS,NNPS,RB,VBD,VBN,VBP
+F:73.25 - MI:0.79 - MA:0.74 - AC:73.25 - atr:7987 - id:130 - st:IN,RB,VBD
+F:73.52 - MI:0.79 - MA:0.74 - AC:73.52 - atr:8195 - id:23 - st:IN,JJR,JJS,NNP,NNPS,VBG
+F:67.06 - MI:0.74 - MA:0.67 - AC:67.06 - atr:5098 - id:131 - st:DT,FW,JJ,JJR,NNS,NNPS,RB,VBN
+F:54.04 - MI:0.61 - MA:0.52 - AC:54.04 - atr:3481 - id:117 - st:DT,FW,JJ,JJR,NN,NNS,NNPS,VBZ
+F:66.88 - MI:0.74 - MA:0.67 - AC:66.88 - atr:5344 - id:120 - st:DT,FW,JJ,NNS,RB,VBD
+F:73.88 - MI:0.8 - MA:0.75 - AC:73.88 - atr:7651 - id:126 - st:IN,JJR,VBD,VBN,VBP
+F:73.25 - MI:0.79 - MA:0.74 - AC:73.25 - atr:7942 - id:54 - st:JJR,VBD,VBN
+
+
+ Geracao: 6
+F:76.75 - MI:0.82 - MA:0.78 - AC:76.75 - atr:7694 - id:52 - st:FW,IN,JJS,RB,VBN
+F:76.21 - MI:0.82 - MA:0.77 - AC:76.21 - atr:8117 - id:137 - st:IN,RB,VBP
+F:75.94 - MI:0.81 - MA:0.77 - AC:75.94 - atr:7449 - id:134 - st:FW,IN,NNPS,RB,VBN,VBP
+F:74.42 - MI:0.8 - MA:0.75 - AC:74.42 - atr:7399 - id:132 - st:RB,VBD,VBN,VBP
+F:68.04 - MI:0.75 - MA:0.69 - AC:68.04 - atr:6603 - id:141 - st:JJ,VBG
+F:62.12 - MI:0.68 - MA:0.61 - AC:62.12 - atr:5469 - id:140 - st:IN,JJR,JJS,NN,NNP,NNPS,VBD,VBP
+F:55.03 - MI:0.62 - MA:0.54 - AC:55.03 - atr:3214 - id:117 - st:DT,FW,JJ,JJR,NN,NNS,NNPS,RB,VBZ
+F:60.41 - MI:0.67 - MA:0.59 - AC:60.41 - atr:4155 - id:138 - st:DT,FW,JJR,JJS,NN,NNS,VBN,VBZ
+F:68.76 - MI:0.75 - MA:0.69 - AC:68.76 - atr:5699 - id:135 - st:DT,IN,JJ,JJR,NNPS,RB,VBD,VBN,VBZ
+F:74.6 - MI:0.8 - MA:0.76 - AC:74.6 - atr:8357 - id:133 - st:IN,VBZ
+F:71.72 - MI:0.78 - MA:0.72 - AC:71.72 - atr:7332 - id:126 - st:IN,JJR,VB,VBD,VBN,VBP
+F:73.25 - MI:0.79 - MA:0.74 - AC:73.25 - atr:7987 - id:130 - st:IN,RB,VBD
+
+
+ Geracao: 7
+F:76.75 - MI:0.82 - MA:0.78 - AC:76.75 - atr:7694 - id:52 - st:FW,IN,JJS,RB,VBN
+F:76.12 - MI:0.82 - MA:0.77 - AC:76.12 - atr:8416 - id:130 - st:RB
+F:76.03 - MI:0.81 - MA:0.77 - AC:76.03 - atr:7726 - id:138 - st:DT,FW,JJR,VBN,VBZ
+F:62.48 - MI:0.69 - MA:0.62 - AC:62.48 - atr:5153 - id:140 - st:FW,IN,JJR,JJS,NN,NNP,NNPS,VBD,VBG,VBP
+F:74.6 - MI:0.8 - MA:0.76 - AC:74.6 - atr:8345 - id:145 - st:IN,JJS,VBZ
+F:75.94 - MI:0.81 - MA:0.77 - AC:75.94 - atr:7449 - id:134 - st:FW,IN,NNPS,RB,VBN,VBP
+F:67.68 - MI:0.74 - MA:0.67 - AC:67.68 - atr:5824 - id:149 - st:IN,JJ,JJR,JJS,VB,VBD,VBN,VBP
+F:72.17 - MI:0.78 - MA:0.73 - AC:72.17 - atr:6994 - id:126 - st:IN,JJR,NNP,RB,VB,VBD,VBN,VBP
+F:68.04 - MI:0.75 - MA:0.69 - AC:68.04 - atr:6603 - id:141 - st:JJ,VBG
+F:68.76 - MI:0.75 - MA:0.69 - AC:68.76 - atr:5699 - id:135 - st:DT,IN,JJ,JJR,NNPS,RB,VBD,VBN,VBZ
+F:56.19 - MI:0.64 - MA:0.54 - AC:56.19 - atr:2705 - id:132 - st:DT,IN,JJ,NN,NNS,RB,VBD,VBN,VBP
+F:69.48 - MI:0.76 - MA:0.7 - AC:69.48 - atr:6089 - id:151 - st:DT,IN,JJ,JJR,VBN,VBZ
+
+
+ Geracao: 8
+F:76.75 - MI:0.82 - MA:0.78 - AC:76.75 - atr:7694 - id:52 - st:FW,IN,JJS,RB,VBN
+F:76.21 - MI:0.82 - MA:0.77 - AC:76.21 - atr:8072 - id:154 - st:DT,FW,JJS,VBN
+F:73.61 - MI:0.8 - MA:0.74 - AC:73.61 - atr:6638 - id:159 - st:FW,IN,JJR,NNS,NNP,NNPS,VBN,VBP
+F:72.44 - MI:0.78 - MA:0.73 - AC:72.44 - atr:8240 - id:130 - st:VB
+F:67.95 - MI:0.74 - MA:0.67 - AC:67.95 - atr:5552 - id:158 - st:DT,IN,JJ,JJR,RB,VB,VBD,VBN,VBP
+F:54.94 - MI:0.63 - MA:0.55 - AC:54.94 - atr:2563 - id:132 - st:IN,JJ,NN,NNS,RB,VBD,VBG,VBN
+F:72.17 - MI:0.78 - MA:0.73 - AC:72.17 - atr:6994 - id:126 - st:IN,JJR,NNP,RB,VB,VBD,VBN,VBP
+F:72.53 - MI:0.79 - MA:0.73 - AC:72.53 - atr:6729 - id:155 - st:FW,IN,JJR,NNS,VBN,VBZ
+F:61.85 - MI:0.68 - MA:0.62 - AC:61.85 - atr:5620 - id:156 - st:FW,IN,JJR,JJS,NN,NNP,NNPS,VBD
+F:68.76 - MI:0.75 - MA:0.68 - AC:68.76 - atr:5309 - id:135 - st:DT,IN,JJ,NNPS,RB,VB,VBD,VBN,VBZ
+F:64.54 - MI:0.72 - MA:0.65 - AC:64.54 - atr:5319 - id:157 - st:JJ,NNS,VBG,VBP
+F:67.68 - MI:0.74 - MA:0.67 - AC:67.68 - atr:5824 - id:149 - st:IN,JJ,JJR,JJS,VB,VBD,VBN,VBP
+
+
+ Geracao: 9
+F:76.75 - MI:0.82 - MA:0.78 - AC:76.75 - atr:7694 - id:52 - st:FW,IN,JJS,RB,VBN
+F:76.21 - MI:0.82 - MA:0.77 - AC:76.21 - atr:8072 - id:164 - st:DT,FW,JJS,VBN
+F:73.61 - MI:0.8 - MA:0.74 - AC:73.61 - atr:6626 - id:159 - st:FW,IN,JJR,JJS,NNS,NNP,NNPS,VBN,VBP
+F:68.4 - MI:0.75 - MA:0.68 - AC:68.4 - atr:5616 - id:135 - st:DT,IN,JJ,JJS,NNPS,RB,VB,VBD,VBN
+F:72.89 - MI:0.79 - MA:0.73 - AC:72.89 - atr:6109 - id:169 - st:FW,IN,NNS,RB,VBD,VBG,VBN
+F:62.39 - MI:0.68 - MA:0.62 - AC:62.39 - atr:5398 - id:130 - st:NN,VB,VBD
+F:61.4 - MI:0.68 - MA:0.61 - AC:61.4 - atr:5968 - id:156 - st:FW,IN,JJR,NN,NNP,NNPS
+F:62.84 - MI:0.7 - MA:0.61 - AC:62.84 - atr:3251 - id:162 - st:JJ,JJR,NN,NNPS,RB,VB,VBD,VBG,VBN,VBP
+F:71.99 - MI:0.78 - MA:0.72 - AC:71.99 - atr:7114 - id:155 - st:FW,IN,NNS,NNP,VBP,VBZ
+F:65.35 - MI:0.73 - MA:0.65 - AC:65.35 - atr:5357 - id:170 - st:FW,IN,JJ,JJR,NNS,VBN
+F:68.22 - MI:0.75 - MA:0.68 - AC:68.22 - atr:4946 - id:166 - st:DT,IN,JJ,NNPS,RB,VB,VBD,VBG,VBN,VBZ
+F:54.94 - MI:0.63 - MA:0.55 - AC:54.94 - atr:2563 - id:132 - st:IN,JJ,NN,NNS,RB,VBD,VBG,VBN

@@ -41,7 +41,7 @@ public class Start {
 //        System.out.println("d:" + d.length);
 //        System.exit(0);
 
-        int numGeracoes = 1;
+        int numGeracoes = 100;
         limpaDados();
 
         if (args.length > 0) {
@@ -53,11 +53,11 @@ public class Start {
         }
 
         AGPLN2 agpln2 = new AGPLN2();
-//        try {
-//            atualizaMapaFitness("banco.txt", agpln2.synchronizedHashMap);
-//        } catch (IOException ex) {
-//            Logger.getLogger(Start.class.getName()).log(Level.SEVERE, null, ex);
-//        }
+       // try {
+       //     atualizaMapaFitness("banco.txt", agpln2.synchronizedHashMap);
+       // } catch (IOException ex) {
+     //       Logger.getLogger(Start.class.getName()).log(Level.SEVERE, null, ex);
+       // }
 
         String fileName = new Date().toString();
         agpln2.criaPopulacaoInicial();
@@ -67,7 +67,7 @@ public class Start {
             agpln2.cruza();
             agpln2.muta();
             agpln2.seleciona(12);
-           // preperaPrint(agpln2.cromossomos, i, fileName);
+            preperaPrint(agpln2.cromossomos, i, fileName);
         }
 
         StringBuilder sb = new StringBuilder();

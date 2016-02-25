@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stopfile>
-	<stopword>rp</stopword>
 	<stopword>dam</stopword>
-	<stopword>PHOPHO</stopword>
-	<stopword>NI</stopword>
-	<stopword>YC</stopword>
-	<stopword>E</stopword>
-	<stopword>Gtetrads</stopword>
-	<stopword>PHO</stopword>
-	<stopword>VA</stopword>
-	<stopword>Asp</stopword>
+	<stopword>rp</stopword>
+	<stopword>phopho</stopword>
+	<stopword>ni</stopword>
+	<stopword>yc</stopword>
+	<stopword>e</stopword>
+	<stopword>gtetrad</stopword>
+	<stopword>pho</stopword>
+	<stopword>va</stopword>
+	<stopword>asp</stopword>
 </stopfile>
 

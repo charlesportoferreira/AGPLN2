@@ -41,7 +41,7 @@ public class Cromossomo implements Callable<String> {
     private double microAverage;
     private double macroAverage;
     private int numAtributos;
-    public Map<String, String> syncHashMap;
+    // public Map<String, String> syncHashMap;
 
     public void resetFitness() {
         this.fitness = 0;
@@ -90,19 +90,19 @@ public class Cromossomo implements Callable<String> {
 
     public double getFitness() {
         if (fitness == 0) {
-            String geneDecodificado = this.getGeneDecodificado();
-            if (syncHashMap.containsKey(geneDecodificado)) {
-                String[] res = syncHashMap.get(geneDecodificado).split("-");
-                this.fitness = Double.parseDouble(res[0]);
-                this.pctAcerto = Double.parseDouble(res[0]);
-                this.microAverage = Double.parseDouble(res[1]);
-                this.macroAverage = Double.parseDouble(res[2]);
-                this.numAtributos = Integer.parseInt(res[3]);
-
-                //System.out.print("calculado: " + geneDecodificado + " " + fitness);
-            } else {
-                calculaFitness();
-            }
+            //String geneDecodificado = this.getGeneDecodificado();
+//            if (syncHashMap.containsKey(geneDecodificado)) {
+//                String[] res = syncHashMap.get(geneDecodificado).split("-");
+//                this.fitness = Double.parseDouble(res[0]);
+//                this.pctAcerto = Double.parseDouble(res[0]);
+//                this.microAverage = Double.parseDouble(res[1]);
+//                this.macroAverage = Double.parseDouble(res[2]);
+//                this.numAtributos = Integer.parseInt(res[3]);
+//
+//                //System.out.print("calculado: " + geneDecodificado + " " + fitness);
+//            } else {
+            calculaFitness();
+            //}
         }
         return fitness;
     }
@@ -187,9 +187,9 @@ public class Cromossomo implements Callable<String> {
 
     private void classifica() {
         // System.out.println("Executando a classificao do :" + inId);
-        SMO classifier = new SMO();
-      //  IBk classifier = new IBk(5);
-       //  HyperPipes classifier = new HyperPipes();
+         SMO classifier = new SMO();
+        //  IBk classifier = new IBk(5);
+        //HyperPipes classifier = new HyperPipes();
         BufferedReader datafile = readDataFile(inId + ".arff");
 
         Instances data;
@@ -211,7 +211,7 @@ public class Cromossomo implements Callable<String> {
             macroAverage = getMacroAverage(eval, data);
             macroAverage = new BigDecimal(macroAverage).setScale(2, RoundingMode.HALF_UP).doubleValue();
             fitness = pctAcerto;
-            syncHashMap.put(getGeneDecodificado(), fitness + "-" + microAverage + "-" + macroAverage + "-" + numAtributos);
+            //syncHashMap.put(getGeneDecodificado(), fitness + "-" + microAverage + "-" + macroAverage + "-" + numAtributos);
 
             // System.out.println("id: " + inId + " acerto: " + fitness);
         } catch (Exception ex) {

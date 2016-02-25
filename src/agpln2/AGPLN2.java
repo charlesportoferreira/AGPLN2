@@ -31,6 +31,7 @@ public class AGPLN2 {
     public List<Cromossomo> cromossomos;
     int tipoMutacao = 0;
     int numMutacoes = 1;
+    int taxaMutação = 25;
 
     public AGPLN2() {
         this.cromossomos = new ArrayList<>();
@@ -39,7 +40,7 @@ public class AGPLN2 {
 
     public void criaPopulacaoInicial() {
         //synchronizedHashMap.put("DT", 100.0);
-        int tamanhoPop = 5;
+        int tamanhoPop = 50;
         for (int i = 0; i < tamanhoPop; i++) {
             cromossomos.add(new Cromossomo(36));
         }
@@ -65,6 +66,20 @@ public class AGPLN2 {
             System.out.println(cromossomo.getGeneDecodificado());
         });
         //System.exit(0);
+
+//       List<Cromossomo> testes = new ArrayList<>();
+//       testes.add(cromossomos.get(0));
+//       testes.add(cromossomos.get(2));
+//       testes.add(cromossomos.get(4));
+//        for (int i = 0; i < cromossomos.size(); i++) {
+//             if(testes.contains(cromossomos.get(i))){
+//           System.out.println("Ja tenho "+ cromossomos.get(i).getInId());
+//       }else{
+//           System.out.println("nao tenho "+ cromossomos.get(i).getInId());
+//       }
+//        }
+//      
+//       System.exit(0);
     }
 
 //    public void cruza() {
@@ -162,14 +177,23 @@ public class AGPLN2 {
     public void muta() {
         Random random = new Random();
         int probMutacao;
-        for (Cromossomo cromossomo : cromossomos) {
-            for (int i = 0; i < cromossomo.getGenes().size(); i++) {
+
+        for (int j = 1; j < cromossomos.size(); j++) {
+            for (int i = 0; i < cromossomos.get(j).getGenes().size(); i++) {
                 probMutacao = random.nextInt(100 - 0 + 1) + 0;
-                if (probMutacao < 25) {
-                    Mutacao.mutaGene(cromossomo, i);
+                if (probMutacao < taxaMutação) {
+                    Mutacao.mutaGene(cromossomos.get(j), i);
                 }
             }
         }
+//        for (Cromossomo cromossomo : cromossomos) {
+//            for (int i = 0; i < cromossomo.getGenes().size(); i++) {
+//                probMutacao = random.nextInt(100 - 0 + 1) + 0;
+//                if (probMutacao < 25) {
+//                    Mutacao.mutaGene(cromossomo, i);
+//                }
+//            }
+//        }
     }
 
     public void seleciona(int tamanhoPopulacao) {
@@ -184,7 +208,7 @@ public class AGPLN2 {
         //  System.exit(0);
         ExecutorService pool = Executors.newWorkStealingPool();
         for (Cromossomo cromossomo : cromossomos) {
-            cromossomo.syncHashMap = this.synchronizedHashMap;
+            //cromossomo.syncHashMap = this.synchronizedHashMap;
             Future f = pool.submit(cromossomo);
             futures.add(f);
         }
@@ -200,6 +224,9 @@ public class AGPLN2 {
         pool.shutdown();
 
         List<Cromossomo> selecionados = new ArrayList<>();
+        for (Cromossomo cromossomo : cromossomos) {
+            System.out.print(cromossomo.getFitness() + "\t");
+        }
         Collections.sort(cromossomos, (Cromossomo c1, Cromossomo c2) -> new Double(c1.getFitness()).compareTo(c2.getFitness()));
         int pctSelecionados = tamanhoPopulacao * 30 / 100 == 0 ? 1 : tamanhoPopulacao * 30 / 100;
 
@@ -236,19 +263,20 @@ public class AGPLN2 {
         int selecao;
         System.out.println("Selecionando...");
 
-        for (int j = pctSelecionados; j < tamanhoPopulacao; j++) {
+        //for (int j = pctSelecionados; j < tamanhoPopulacao; j++) {
+        while (selecionados.size() < tamanhoPopulacao) {
             selecao = rand.nextInt(100 - 0 + 1) + 0;
             for (int i = 1; i < roleta.length; i++) {
                 if (selecao >= roleta[i - 1] && selecao < roleta[i]) {
-                    selecionados.add(cromossomos.get(i - 1));
-//                    System.out.println("Cromossomo selecionado: "
-//                            + cromossomos.get(i - 1).getProbSelecao()
-//                            + " F: " + cromossomos.get(i - 1).getFitness());
+                    if (!selecionados.contains(cromossomos.get(i - 1))) {
+                        selecionados.add(cromossomos.get(i - 1));
+                        break;
+                    }
                     break;
                 }
             }
+            //}
         }
-
 //        System.exit(0);
         System.out.print("Selecionados:\n");
         HashMap<Double, Integer> map = new HashMap<>();
@@ -280,10 +308,11 @@ public class AGPLN2 {
 
         if (populacaoConvergiu(map)) {
             numMutacoes = cromossomos.size() - 1;
-
+            taxaMutação = 20;
             System.out.println("-------------- Convergiu !!!!!!!---------------------");
         } else {
             numMutacoes = 1;
+            taxaMutação = 10;
         }
 
 //        System.out.println("M: " + cromossomos.get(0).getGenes().toString());
@@ -308,14 +337,14 @@ public class AGPLN2 {
                 } else {
                     tipoMutacao = 0;
                 }
-                System.out.println(count + " % convergiu. " + numMutacoes + " mutacao(oes) sera(o) realizada(s). " + " TM: " + tipoMutacao);
+                System.out.println(count + " % convergiu.  Taxa de mutacao: " + taxaMutação);
                 return true;
             }
             tipoMutacao = 0;
 //            System.out.println(pair.getKey() + " = " + pair.getValue());
             it.remove(); // avoids a ConcurrentModificationException
         }
-        System.out.println(max + " % convergiu. " + numMutacoes + " mutacao(oes) sera(o) realizada(s). " + " TM: " + tipoMutacao);
+        System.out.println(max + " % convergiu.  Taxa de mutacao: " + taxaMutação);
         return false;
     }
 

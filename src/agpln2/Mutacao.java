@@ -40,6 +40,7 @@ public class Mutacao {
         } else {
             cromossomo.getGenes().get(posGene).setValor(1);
         }
+        cromossomo.resetFitness();
 
     }
 

@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stopfile>
-	<stopword>PpaRad</stopword>
+	<stopword>dam</stopword>
+	<stopword>rp</stopword>
+	<stopword>phopho</stopword>
+	<stopword>ni</stopword>
+	<stopword>yc</stopword>
+	<stopword>e</stopword>
+	<stopword>gtetrad</stopword>
+	<stopword>pho</stopword>
+	<stopword>va</stopword>
+	<stopword>asp</stopword>
+	<stopword>pparad</stopword>
 	<stopword>more</stopword>
-	<stopword>However</stopword>
+	<stopword>howev</stopword>
 	<stopword>less</stopword>
+	<stopword>earlier</stopword>
 	<stopword>slower</stopword>
-	<stopword>Earlier</stopword>
 	<stopword>bona</stopword>
 	<stopword>closer</stopword>
 	<stopword>better</stopword>
-	<stopword>More</stopword>
+	<stopword>more</stopword>
 	<stopword>faster</stopword>
-	<stopword>Further</stopword>
+	<stopword>further</stopword>
 	<stopword>earlier</stopword>
 	<stopword>further</stopword>
 </stopfile>

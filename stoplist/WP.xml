@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <stopfile>
+	<stopword>dam</stopword>
+	<stopword>rp</stopword>
+	<stopword>phopho</stopword>
+	<stopword>ni</stopword>
+	<stopword>yc</stopword>
+	<stopword>e</stopword>
+	<stopword>gtetrad</stopword>
+	<stopword>pho</stopword>
+	<stopword>va</stopword>
+	<stopword>asp</stopword>
+	<stopword>pparad</stopword>
+	<stopword>more</stopword>
+	<stopword>howev</stopword>
+	<stopword>less</stopword>
+	<stopword>earlier</stopword>
+	<stopword>slower</stopword>
+	<stopword>bona</stopword>
+	<stopword>closer</stopword>
+	<stopword>better</stopword>
+	<stopword>more</stopword>
+	<stopword>faster</stopword>
+	<stopword>further</stopword>
+	<stopword>earlier</stopword>
+	<stopword>further</stopword>
+	<stopword>mai</stopword>
+	<stopword>footprint</stopword>
+	<stopword>will</stopword>
+	<stopword>need</stopword>
+	<stopword>might</stopword>
+	<stopword>could</stopword>
+	<stopword>can</stopword>
+	<stopword>can</stopword>
+	<stopword>would</stopword>
+	<stopword>should</stopword>
+	<stopword>cannot</stopword>
+	<stopword>must</stopword>
+	<stopword>ca</stopword>
 	<stopword>what</stopword>
 	<stopword>ho</stopword>
 	<stopword>who</stopword>
